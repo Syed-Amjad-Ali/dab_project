@@ -8,7 +8,7 @@ on:
 jobs:
   cd-deploy-test:
     name: Deploy to TEST
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     environment: test
     steps:
       - name: Checkout code
@@ -47,7 +47,7 @@ jobs:
   cd-deploy-prod:
     name: Deploy to PROD
     needs: cd-deploy-test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     environment: prod
     steps:
       - name: Checkout code
