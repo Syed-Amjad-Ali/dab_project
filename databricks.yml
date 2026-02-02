@@ -54,8 +54,10 @@ targets:
       root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
     
     permissions:
-      - user_name: syedamjadali@syedamjadali.onmicrosoft.com
+      - service_principal_name: ab484a4d-e156-4b32-a3b3-92f1b9805904
         level: CAN_MANAGE
+    run_as:
+      service_principal_name: ab484a4d-e156-4b32-a3b3-92f1b9805904
 
   prod:
     mode: production
@@ -71,5 +73,8 @@ targets:
       root_path: /Workspace/Shared/.bundle/${bundle.name}/${bundle.target}
     
     permissions:
-      - user_name: syedamjadali@syedamjadali.onmicrosoft.com
+      - service_principal_name: 91d5452f-7e2f-4373-9a17-ae47b71e2133
         level: CAN_MANAGE
+    run_as:
+      service_principal_name: 91d5452f-7e2f-4373-9a17-ae47b71e2133
+
